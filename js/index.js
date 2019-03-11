@@ -77,7 +77,7 @@ function displayBranches() {
         ' (' +
         branch.author.login +
         ') </h3> ' +
-        commit.commit.message +
+        branch.branch.message +
         '</li>'
     )
     .join('')}</ul>`;
