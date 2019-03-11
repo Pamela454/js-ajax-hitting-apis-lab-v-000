@@ -58,7 +58,7 @@ function getBranches(el) {
     const uri =
     rootURL + '/repos/' + el.dataset.username + '/' + repoName + '/branches';
   req.addEventListener('load', displayBranches);
-  req.open('GET', 'uri');
+  req.open('GET', "uri");
   req.send();
 }
 
