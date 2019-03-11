@@ -68,5 +68,5 @@ function getBranches(el) {
 }
 
 function displayBranches() {
-
+   const repos = JSON.parse(this.responseText);
 }
