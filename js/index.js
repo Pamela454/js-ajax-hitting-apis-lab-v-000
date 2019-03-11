@@ -61,6 +61,7 @@ function getBranches(el) {
   req.send();
 }
 
+/repos/:owner/:repo/branches
 function displayBranches() {
 
 }
