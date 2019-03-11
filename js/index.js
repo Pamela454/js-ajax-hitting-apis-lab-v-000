@@ -74,7 +74,5 @@ function displayBranches() {
       branch =>
         '<li>' + branch.name + '</li>')
     .join('')}</ul>`;
-    )
-    .join('')}</ul>`;
   document.getElementById('details').innerHTML = branchesList;
 }
