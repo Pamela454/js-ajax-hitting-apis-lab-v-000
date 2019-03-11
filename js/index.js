@@ -23,11 +23,13 @@ function displayRepositories() {
 }
 
 function getCommits(el) {
-  const name = el.dataset.repo;
-  const req = new XMLHttpRequest();
-  req.addEventListener('load', displayCommits);
-  req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/commits');
-  req.send();
+  const repoName = el.dataset.repository;
+  const uri =
+    rootURL + '/repos/' + el.dataset.username + '/' + repoName + '/commits';
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener('load', displayCommits);
+  xhr.open('GET', uri);
+  xhr.send();
 }
 
 function displayCommits() {
