@@ -73,7 +73,7 @@ function displayBranches() {
     .map(
       branch =>
         '<li><h3>' +
-        branch.branch.author.name +
+        branch.name +
         ' (' +
         branch.author.login +
         ') </h3> ' +
