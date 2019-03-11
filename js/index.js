@@ -72,13 +72,8 @@ function displayBranches() {
    const branchesList = `<ul>${branches
     .map(
       branch =>
-        '<li><h3>' +
-        branch.name +
-        ' (' +
-        branch.author.login +
-        ') </h3> ' +
-        branch.branch.message +
-        '</li>'
+        '<li>' + branch.name + '</li>')
+    .join('')}</ul>`;
     )
     .join('')}</ul>`;
   document.getElementById('details').innerHTML = branchesList;
