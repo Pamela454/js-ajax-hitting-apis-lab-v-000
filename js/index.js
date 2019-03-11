@@ -73,9 +73,9 @@ function displayBranches() {
     .map(
       branch =>
         '<li><h3>' +
-        commit.commit.author.name +
+        branch.branch.author.name +
         ' (' +
-        commit.author.login +
+        branch.author.login +
         ') </h3> ' +
         commit.commit.message +
         '</li>'
